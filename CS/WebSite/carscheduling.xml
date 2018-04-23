@@ -1,0 +1,331 @@
+<?xml version="1.0" standalone="yes"?>
+<CarsDBDataSet xmlns="http://tempuri.org/CarsDBDataSet.xsd">
+  <xs:schema id="CarsDBDataSet" targetNamespace="http://tempuri.org/CarsDBDataSet.xsd" xmlns:mstns="http://tempuri.org/CarsDBDataSet.xsd" xmlns="http://tempuri.org/CarsDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="CarsDBDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_CarsDBDataSet.xsd_x003A_CarScheduling" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CarScheduling">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+                <xs:element name="CarId" type="xs:int" minOccurs="0" />
+                <xs:element name="UserId" type="xs:int" minOccurs="0" />
+                <xs:element name="Status" type="xs:int" minOccurs="0" />
+                <xs:element name="Subject" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="536870910" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Label" type="xs:int" minOccurs="0" />
+                <xs:element name="StartTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="EndTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Location" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AllDay" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EventType" type="xs:int" minOccurs="0" />
+                <xs:element name="RecurrenceInfo" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="536870910" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ReminderInfo" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="536870910" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Price" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ContactInfo" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="536870910" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:CarScheduling" />
+        <xs:field xpath="mstns:ID" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <CarScheduling>
+    <ID>2</ID>
+    <CarId>1</CarId>
+    <Status>3</Status>
+    <Subject>Mr.Brown</Subject>
+    <Description>Rent this car </Description>
+    <Label>2</Label>
+    <StartTime>2008-07-12T11:00:00+04:00</StartTime>
+    <EndTime>2008-07-12T14:30:00+04:00</EndTime>
+    <Location>city</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>8</Price>
+    <ContactInfo>cellular: +530145961202</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>3</ID>
+    <CarId>1</CarId>
+    <Status>2</Status>
+    <Subject>Repair</Subject>
+    <Description>Scheduled repair of this car</Description>
+    <Label>4</Label>
+    <StartTime>2008-07-14T08:00:00+04:00</StartTime>
+    <EndTime>2008-07-15T16:30:00+04:00</EndTime>
+    <Location>Service Center</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>90</Price>
+    <ContactInfo>Contact: Paula Wilson Address: OR Elgin City Center Plaza 516 Main St.</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>4</ID>
+    <CarId>1</CarId>
+    <Status>3</Status>
+    <Subject>Mr.White</Subject>
+    <Description>Rent this car</Description>
+    <Label>3</Label>
+    <StartTime>2008-07-13T10:00:00+04:00</StartTime>
+    <EndTime>2008-07-13T17:00:00+04:00</EndTime>
+    <Location>city</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>7.5</Price>
+    <ContactInfo>phone: (401) 349-4620</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>5</ID>
+    <CarId>1</CarId>
+    <Status>4</Status>
+    <Subject>Check up</Subject>
+    <Description>Inspection</Description>
+    <Label>0</Label>
+    <StartTime>2005-07-10T12:00:00+04:00</StartTime>
+    <EndTime>2005-07-10T18:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>3</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Id="b563d782-9520-4f29-a081-6d7c49307a73" Index="0" /&gt;</RecurrenceInfo>
+    <Price>55</Price>
+    <ContactInfo>Address: LA New Orleans P.O. Box 78934  (100) 555-4822  contact: Administrator</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>6</ID>
+    <CarId>1</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>1</Label>
+    <StartTime>2008-07-05T16:30:00+04:00</StartTime>
+    <EndTime>2008-07-05T18:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>1</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Start="07/05/2008 16:30:00" End="08/01/2008 00:00:00" WeekDays="62" Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Month="12" OccurrenceCount="20" Range="2" Type="1" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>7.5</Price>
+    <ContactInfo>7466 - Gas / Car Wash</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>11</ID>
+    <CarId>1</CarId>
+    <Status>4</Status>
+    <Subject>Check up</Subject>
+    <Description>Check up after maintenance</Description>
+    <Label>5</Label>
+    <StartTime>2008-07-15T19:30:00+04:00</StartTime>
+    <EndTime>2008-07-15T22:30:00+04:00</EndTime>
+    <Location>Service Center</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>45</Price>
+    <ContactInfo>Len Radde, 10564 W Woodward Ave, Wauwatosa WI 53444  Email: s_vanish1@servicec.com</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>13</ID>
+    <CarId>1</CarId>
+    <Status>3</Status>
+    <Subject>Mr.Green</Subject>
+    <Description>Rent this car for the all day</Description>
+    <Label>3</Label>
+    <StartTime>2008-07-11T00:00:00+04:00</StartTime>
+    <EndTime>2008-07-12T00:00:00+04:00</EndTime>
+    <Location>city</Location>
+    <AllDay>true</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>6</Price>
+    <ContactInfo>Phone: (414) 964-5861 (w); (414) 647-1231 (cell); (414) 965-5950 (fax)</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>14</ID>
+    <CarId>3</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>2</Label>
+    <StartTime>2008-07-11T07:00:00+04:00</StartTime>
+    <EndTime>2008-07-11T09:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>1</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Start="07/11/2008 07:00:00" End="08/25/2008 07:00:00" WeekDays="42" Id="51c81018-53fa-4d10-925f-2ed7f8408c75" Month="12" OccurrenceCount="20" Range="1" Type="1" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>10</Price>
+    <ContactInfo>Address: OR Portland  84 Jefferson Way Suite 12  phone: (503) 555-3612</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>15</ID>
+    <CarId>3</CarId>
+    <Status>4</Status>
+    <Subject>Mrs.Black</Subject>
+    <Description>Rent this car</Description>
+    <Label>3</Label>
+    <StartTime>2008-07-11T10:00:00+04:00</StartTime>
+    <EndTime>2008-07-11T11:30:00+04:00</EndTime>
+    <Location>out-of-town</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>7</Price>
+    <ContactInfo>Phone: (262) 946-9474; w (222) 723-2678 x22, cell (253) 713-0563, fax (361) 733-2870</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>16</ID>
+    <CarId>3</CarId>
+    <Status>4</Status>
+    <Subject>Mrs.Black</Subject>
+    <Description>Rent this car</Description>
+    <Label>3</Label>
+    <StartTime>2008-07-12T13:00:00+04:00</StartTime>
+    <EndTime>2008-07-12T14:30:00+04:00</EndTime>
+    <Location>out-of-town</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>7</Price>
+    <ContactInfo>Phone: (262) 946-9474; w (222) 723-2678 x22, cell (253) 713-0563, fax (361) 733-2870</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>17</ID>
+    <CarId>3</CarId>
+    <Status>4</Status>
+    <Subject>Mrs.Black</Subject>
+    <Description>Rent this car</Description>
+    <Label>3</Label>
+    <StartTime>2008-07-13T15:30:00+04:00</StartTime>
+    <EndTime>2008-07-14T14:00:00+04:00</EndTime>
+    <Location>out-of-town</Location>
+    <AllDay>false</AllDay>
+    <EventType>0</EventType>
+    <ReminderInfo />
+    <Price>7</Price>
+    <ContactInfo>Phone: (262) 946-9474; w (222) 723-2678 x22, cell (253) 713-0563, fax (361) 733-2870</ContactInfo>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>18</ID>
+    <CarId>1</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>1</Label>
+    <StartTime>2008-07-07T16:30:00+04:00</StartTime>
+    <EndTime>2008-07-07T18:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>3</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>0.0000</Price>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>19</ID>
+    <CarId>1</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>1</Label>
+    <StartTime>2008-07-14T18:30:00+04:00</StartTime>
+    <EndTime>2008-07-14T20:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>3</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="5" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>0.0000</Price>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>20</ID>
+    <CarId>3</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>2</Label>
+    <StartTime>2008-07-23T01:30:00+04:00</StartTime>
+    <EndTime>2008-07-23T09:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>3</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Id="51c81018-53fa-4d10-925f-2ed7f8408c75" Index="5" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>0.0000</Price>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>21</ID>
+    <CarId>1</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>1</Label>
+    <StartTime>2008-07-23T15:00:00+04:00</StartTime>
+    <EndTime>2008-07-23T16:30:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>3</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="12" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>0.0000</Price>
+  </CarScheduling>
+  <CarScheduling>
+    <ID>22</ID>
+    <CarId>1</CarId>
+    <Status>1</Status>
+    <Subject>Wash</Subject>
+    <Description>Wash this car in the garage</Description>
+    <Label>1</Label>
+    <StartTime>2008-07-25T16:30:00+04:00</StartTime>
+    <EndTime>2008-07-25T17:00:00+04:00</EndTime>
+    <Location>Garage</Location>
+    <AllDay>false</AllDay>
+    <EventType>3</EventType>
+    <RecurrenceInfo>&lt;RecurrenceInfo Id="975889a8-ea37-4625-a1ec-0fb2806199e2" Index="14" /&gt;</RecurrenceInfo>
+    <ReminderInfo />
+    <Price>0.0000</Price>
+  </CarScheduling>
+</CarsDBDataSet>
