@@ -6,6 +6,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to get appointment information using non-visual control
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e608/)**
+<!-- run online end -->
 
 
 <p>The following example illustrates a technique for obtaining appointment info directly from a database. Although you cannot get rid of ASPxScheduler at all, a non-visual control suffices to operate scheduler objects and API. </p><p><strong>See Also:</strong><br />
